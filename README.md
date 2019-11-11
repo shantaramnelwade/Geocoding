@@ -1,4 +1,4 @@
-# shanta
+#Geocoding
 import pandas as pd #import pandas for accessing excel and making dataframe 
 import geopy as gy # importing for geocoding
 import openpyxl as xl #writing in new excel
@@ -21,7 +21,6 @@ for i in range(1,len(data['A'])): #start the range from one because excel sheet 
     data.cell(row=i,column=24,value=latt) # writing into the excel sheet, specify the column number to write in excel
     long=locadress.longitude # getting longitude
     print(long)
-    data.cell(row=i,column=25,value=long)# writing in excel sheet, specify the column number to write in excel
- # exit()  
+    data.cell(row=i,column=25,value=long)# writing in excel sheet, specify the column number to write in excel 
 wbs.save('abc.xlsx')# saved the file in current directory
     
